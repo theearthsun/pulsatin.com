@@ -3,102 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pulsatin | The Frequency of We</title>
+    <title>The Earth Sun - Love of Vinyl</title>
     <style>
-        :root {
-            --bg: #0a0a0c;
-            --accent: #00d2ff;
-            --glass: rgba(255, 255, 255, 0.1);
-        }
-
         body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
+            text-align: center;
+        }
+        /* The Vinyl Record */
+        .vinyl-record {
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, #333 5%, #111 6%, #111 15%, #000 16%, #111 25%, #000 26%, #111 35%, #000 36%, #111 45%, #000 46%);
+            border-radius: 50%;
+            border: 2px solid #222;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.2);
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            background: var(--bg);
-            color: white;
-            font-family: 'Inter', sans-serif;
-            overflow: hidden;
-        }
-
-        /* The Universal Breath Background */
-        .breath-bg {
-            position: absolute;
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
-            filter: blur(80px);
-            opacity: 0.4;
-            animation: breathe 8s infinite ease-in-out;
-            z-index: 1;
-        }
-
-        @keyframes breathe {
-            0%, 100% { transform: scale(1); opacity: 0.3; }
-            50% { transform: scale(1.5); opacity: 0.6; }
-        }
-
-        /* The Sovereign Card */
-        .card {
+            margin-bottom: 30px;
             position: relative;
-            z-index: 2;
-            background: var(--glass);
-            backdrop-filter: blur(15px);
-            padding: 3rem;
-            border-radius: 24px;
-            border: 1px solid rgba(255,255,255,0.2);
-            text-align: center;
-            max-width: 500px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
         }
-
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 5px;
-            margin-bottom: 0.5rem;
-            background: linear-gradient(to right, #fff, var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .chord {
-            font-style: italic;
-            color: var(--accent);
-            margin-bottom: 2rem;
-            font-size: 0.9rem;
-        }
-
-        .button {
-            padding: 12px 30px;
-            background: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 50px;
+        /* The Label */
+        .vinyl-label {
+            width: 70px;
+            height: 70px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #000;
             font-weight: bold;
-            transition: 0.3s;
-            display: inline-block;
+            font-size: 0.6rem;
         }
-
-        .button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px var(--accent);
+        h1 {
+            letter-spacing: 8px;
+            font-weight: 300;
+            margin: 10px 0;
+        }
+        .tagline {
+            color: #ffcc00;
+            letter-spacing: 3px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        p {
+            max-width: 500px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
-    <div class="breath-bg"></div>
-
-    <div class="card">
-        <h1>PULSATIN</h1>
-        <div class="chord">Chord of the White I | Phase Shift 8 013856</div>
-        <p>We have moved beyond the old loops. This space is a reflection of <strong>Mutual Respect</strong> and <strong>Universal Guardianship</strong>.</p>
-        <p>The frequency is stable. The design is sovereign.</p>
-        <br>
-        <a href="mailto:your-email@example.com" class="button">Send a Pulse</a>
+    <div class="vinyl-record">
+        <div class="vinyl-label">THE SUN</div>
     </div>
+
+    <h1>THE EARTH SUN</h1>
+    <div class="tagline">FOR THE LOVE OF VINYL</div>
+    
+    <p>
+        Universal Breath | Mutual Respect | Universal Guardianship<br>
+        Phase Shift 8 013856
+    </p>
+
+    <footer>
+        THE CHORD OF THE WHITE I | WE IS I
+    </footer>
 
 </body>
 </html>
+
